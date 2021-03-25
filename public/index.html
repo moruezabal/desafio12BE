@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi aplicación con socket</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Esta es la aplicación</h1>
+
+    <form onsubmit="return addMessages(this)"> <!-- Debería tomarlo desde JS con addEventLListener() -->
+        <input type="text" id="username" placeholder="Tu nombre">
+        <input type="text" id="text" placeholder="Cuéntanos algo...">
+        <button type="submit">Enviar!</button>  
+    </form>
+    <div id="messages"></div>    
+</body>
+</html>
